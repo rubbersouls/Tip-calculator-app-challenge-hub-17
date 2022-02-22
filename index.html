@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <html lang="en">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<header>
+			<img src="images/logo.svg" alt="logo">
+		</header>
+		<section>
+			<!-- Box Valeur-->
+			<div class="box-valeur">
+				<h1>Bill</h1>
+				<span class="dollars">$</span>
+				<input type="text" name="bill" placeholder="0" id="bill">
+				<h1 class="selectortip">Selector Tip %</h1>
+				<div>
+					 <!-- Tip btn -->
+					<div class="box-value-top">
+						<div class="cadre five"><p>5%</p></div>
+						<div class="cadre ten"><p>10%</p></div>
+						<div class="cadre fifteen"><p>15%</p></div>
+					</div>
+					<div class="box-value-bottom">
+						<div class="cadre twentyfive"><p>25%</p></div>
+						<div class="cadre  fifty"><p>50%</p></div>
+						<input type="text" name="custom" placeholder="Custom" class="custom" id="customvalue">
+					</div>
+				</div>
+				<h1>Number of People</h1>
+				<span class="error">Can't be zero</span>
+				<img src="images/icon-person.svg" class="people-img">
+				<input type="text" name="people" placeholder="1" id="numberpeople">
+			</div>
+ 			<!-- Box Screen-->
+			<div class="box-screen">
+				<!--Screen-->
+				<div>
+					<div class="screen-ecartement">
+						<div>
+							<p>Tip Amount</p>
+							<p>/ person</p>
+						</div>
+						<p class="screentip">$0</p>
+					</div>
+					<div class="screen-ecartement">
+						<div>
+							<p>Total</p>
+							<p>/ person</p>
+						</div>
+						<p class="screentotal">$0</p>
+					</div>
+						<!----- btn reset --->
+					<div>
+						<div class="btn">
+							<p>Reset</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+<script src="app.js"></script>
+</html>

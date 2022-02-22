@@ -1,0 +1,296 @@
+:root{
+  --colorbackground: #C5E4E7;
+  --colorscreen: #00474B;
+  --color1: #697D7E;
+  --colorbackgroundinput: #F3F8FB;
+  --color2: #29C4B2;
+  --colorsurvolecadre: #00656B;
+  --colorsurvolebtn: #2AD3BA;
+  --colorclick: #9FE8DF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+  color: #FFF;
+}
+
+body{
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: var(--colorbackground);
+}
+
+main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header{
+  margin-bottom: 88px;
+}
+
+section{
+  height: 481px;
+  width: 920px;
+  background-color: #FFF;
+  display: flex;
+  gap: 16px;
+  border-radius: 15px;
+  box-shadow: -10px 15px 10px rgba(146, 222, 229, 0.3);
+}
+
+.box-valeur{
+  width: 428px;
+  padding-top: 52px;
+  padding-left: 48px;
+}
+
+.box-screen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 477px;
+}
+
+/* Screen */
+
+.box-screen>div{
+  height: 417px;
+  width: 413px;
+  background-color: var(--colorscreen);
+  border-radius: 15px;
+  padding: 63px 42px 40px 40px;
+  overflow:hidden;
+}
+
+.screen-ecartement{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.screen-ecartement>div>p:nth-child(1){
+  font-size: 0.9em;
+}
+
+.screen-ecartement>div>p:nth-child(2){
+  font-size: 0.9em;
+  opacity: 30%;
+}
+
+.screen-ecartement>p{
+  font-size: 2em;
+  color: var(--color2);
+}
+
+.btn{
+  height: 48px;
+  width: 100%;
+  background-color: var(--color2);
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.btn>p{
+  color: var(--colorscreen);
+  font-weight:bold;
+  font-size: 1.5em;
+  -webkit-user-select: none;
+}
+
+.error{
+  display: none;
+  position: absolute;
+  color: red;
+  margin-left: 250px;
+  margin-top: -25px;
+  font-size: 1em;
+}
+
+
+/* Selector % */
+
+.box-valeur>div{
+ display:flex;
+ flex-direction: column;
+ gap: 16px;
+ margin-bottom: 47px;
+}
+
+h1{
+  margin-bottom: 12px;
+  color: var(--color1);
+  font-size: 0.8em;
+}
+
+.selectortip{
+ margin-top: 48px;
+ margin-bottom: 22px;
+}
+
+.cadre{
+  height:48px;
+  width: 117px;  
+  background-color: var(--colorscreen);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cadre>p{
+  font-size: 1.3em;
+}
+
+.box-valeur>input{
+  height: 45px;
+  width: 379px;
+  background-color: var(--colorbackgroundinput);
+  border: solid 1px var(--colorbackgroundinput);
+  text-align: right; 
+  font-size: 1.4em;
+  color: var(--colorscreen);
+  padding-right: 10px;
+}
+
+.custom{
+  height:48px;
+  width: 117px;   
+  background-color: var(--colorbackgroundinput);
+  border: solid 1px var(--colorbackgroundinput);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--colorscreen);
+}
+
+input:focus{
+  outline-color: var(--color2);
+}
+
+.dollars{
+  position: absolute;
+  color: var(--color1);
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: 1.4em;
+}
+
+.people-img{
+  position: absolute;
+  color: var(--color1);
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 1.4em;
+}
+
+.box-value-top{
+  display: flex;
+  gap: 14px;
+}
+
+
+.box-value-bottom{
+  display: flex;
+  gap: 14px;
+}
+
+/* action */
+
+.active{
+  background-color: var(--color2);
+  --color%: #
+}
+
+.inputactive{
+  border: solid 2px var(--colorscreen);
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: var(--colorsurvolebtn);
+}
+
+.btn:active{
+  background-color: var(--colorclick);
+}
+
+.cadre:hover{
+  cursor: pointer;
+  background-color: var(--colorsurvolecadre);
+}
+
+.cadre:active{
+  background-color: var(--colorclick);
+}
+
+.erroractive{
+  display: block;
+}
+
+@media(max-width: 950px){
+
+section{
+  height: auto;
+  width: 375px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+}
+
+.box-valeur{
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.box-valeur>input{
+  height: 45px;
+  width: 310px;
+}
+
+.box-value-top{
+ flex-wrap: wrap;
+}
+
+.box-value-bottom{
+ flex-wrap: wrap;
+}
+
+.box-valeur>div{
+  flex-direction: row;
+}
+
+.box-screen {
+    width: 375px;
+}
+
+.box-screen>div {
+    height: 257px;
+    width: 327px;
+    padding: 40px 42px 10px 40px;
+}
+
+.screen-ecartement {
+    margin-bottom: 20px;
+}
+.btn {
+    margin-top: 25px;
+}
+
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+}
